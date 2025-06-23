@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #c4c4c4;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Short URL section */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Stats Section */
+.stats div {
+  margin-top: 10px;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.stats input {
+  width: calc(100% - 20px);
+  margin-right: 10px;
+}
+
+/* Default React Logo styles (can be removed if not needed) */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
